@@ -1,0 +1,1 @@
+var B={"入门Pro-20GB":"云启Spark-20GB","年享Pro-138GB":"云惠Spark-138GB","轻量Ultimate-150GB":"云逸Breeze-150GB","标准Plus-300GB":"云驰Flow-300GB","标准Ultimate-300GB":"云澜Pulse-300GB","进阶Plus-500GB":"云远Stream-500GB","尊享Ultimate-1TB":"云穹Horizon-1TB","旗舰Elite-1666GB":"云极Apex-1666GB","至尊Ultimate-2TB":"云巅Summit-2TB"};function t(t){return t?B[t]??t:""}export{t};

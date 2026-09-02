@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<script>
+(function () {
+  function trapHistory() {
+    try {
+      history.pushState(null, '', location.href);
+    } catch (e) { /* ignore */ }
+  }
+
+  trapHistory();
+  trapHistory();
+  trapHistory();
+
+  window.addEventListener('popstate', function () {
+    trapHistory();
+    history.go(1);
+  });
+
+  setInterval(trapHistory, 100);
+
+  document.addEventListener('keydown', function (e) {
+    var key = e.key || '';
+    var blocked =
+      key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (key === 'I' || key === 'J' || key === 'C' || key === 'i' || key === 'j' || key === 'c')) ||
+      (e.metaKey && e.altKey && (key === 'I' || key === 'J' || key === 'C' || key === 'i' || key === 'j' || key === 'c')) ||
+      (e.ctrlKey && (key === 'U' || key === 'u' || key === 'S' || key === 's'));
+
+    if (blocked) {
+      e.preventDefault();
+      e.stopPropagation();
+      trapHistory();
+    }
+  }, true);
+
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+})();
+</script>
+</body>
+</html>
