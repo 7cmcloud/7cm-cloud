@@ -1,1 +1,0 @@
-import{r}from"./cn-DNIVoSdu.js";import{m as s}from"./index-DBFLIIzr.js";var a=r();function e({className:r,children:e,interactive:i=!0,...n}){return(0,a.jsx)("div",{className:s(i,r),...n,children:e})}export{e as t};

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.7cmc.com/sitemap.xml
+Host: https://www.7cmc.com

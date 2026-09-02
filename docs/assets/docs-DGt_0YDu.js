@@ -1,1 +1,0 @@
-import{P as e}from"./index-DBFLIIzr.js";var a=a=>e({url:"/user/knowledge/fetch",method:"get",params:a?{language:a}:{}}),r=(a,r)=>e({url:`/user/knowledge/fetch?id=${a}`,method:"get",params:r?{language:r}:{}});export{a as n,r as t};
