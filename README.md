@@ -1,9 +1,5 @@
 # 7CM Cloud — 用户面板（GitHub Pages）
 
-与 [Gou-Tech](https://github.com/gougoute/Gou-Tech) 相同结构：`docs/` 目录存放静态站点，由 GitHub Pages 发布。
-
-站点内容由 [nova-panel](https://github.com/7cm-cloud/nova-panel) 构建产物同步而来。
-
 ## 更新部署内容
 
 在 `nova-panel` 目录执行：
